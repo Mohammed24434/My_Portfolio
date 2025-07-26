@@ -1,0 +1,585 @@
+/* App.css */
+
+/* Light mode (default) */
+.App {
+  background: #f7f9fb;
+  color: #18191a;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+main {
+  transition: all 0.3s ease;
+}
+
+/* Card and section backgrounds */
+.about__card,
+.education__card,
+.skills__category,
+.skills__soft-card,
+.skills__tool-card,
+.projects__card,
+.contact__form,
+.contact__card {
+  background: #fff;
+  color: #18191a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
+}
+
+.about__card:hover,
+.education__card:hover,
+.skills__category:hover,
+.skills__soft-card:hover,
+.skills__tool-card:hover,
+.projects__card:hover,
+.contact__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Buttons */
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+}
+.btn-outline {
+  background: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: #e3e9f7;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,123,255,0.2);
+}
+
+
+ .education__card h3,
+ .education__card p,
+ .education__card div,
+ .education__card span,
+ .education__card li {
+  color: #020713 !important;
+}
+ .education__card span{
+
+  font-weight: bold;
+  background: #9593ba;
+  
+ }
+
+
+/* Dark mode */
+.App.dark-mode,
+.App.dark-mode main {
+  background: #0f1419 !important;
+  color: #f5f6fa;
+  
+}
+
+.App.dark-mode .hero,
+.App.dark-mode .about,
+.App.dark-mode .education,
+.App.dark-mode .skills,
+.App.dark-mode .projects,
+.App.dark-mode .contact {
+  background: #0f1419 !important;
+}
+
+/* Dark mode cards with enhanced styling */
+.App.dark-mode .about__card,
+.App.dark-mode .education__card,
+.App.dark-mode .skills__category,
+.App.dark-mode .skills__soft-card,
+.App.dark-mode .skills__tool-card,
+.App.dark-mode .projects__card,
+.App.dark-mode .contact__form,
+.App.dark-mode .contact__card {
+  background: #1a1f2e;
+  color: #f5f6fa;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  border: 1px solid #2d3748;
+}
+
+.App.dark-mode .about__card:hover,
+.App.dark-mode .education__card:hover,
+.App.dark-mode .skills__category:hover,
+.App.dark-mode .skills__soft-card:hover,
+.App.dark-mode .skills__tool-card:hover,
+.App.dark-mode .projects__card:hover,
+.App.dark-mode .contact__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  border-color: #4a5568;
+}
+
+/* Dark mode text colors for all pages */
+.App.dark-mode h1,
+.App.dark-mode h2,
+.App.dark-mode h3,
+.App.dark-mode h4,
+.App.dark-mode p,
+.App.dark-mode div, 
+.App.dark-mode span,
+.App.dark-mode li {
+  color: #f5f6fa !important;
+}
+
+/* Dark mode for specific sections */
+.App.dark-mode .hero__text h1 {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .hero__text h2 {
+  color: #4ea1f7 !important;
+}
+
+.App.dark-mode .hero__text p {
+  color: #b0b3b8 !important;
+}
+
+/* Dark mode for education page */
+.App.dark-mode .education h2,
+.App.dark-mode .education h3,
+.App.dark-mode .education p,
+.App.dark-mode .education div,
+.App.dark-mode .education span,
+.App.dark-mode .education li {
+  color: #ffffff !important;
+}
+
+.App.dark-mode .education__card h3,
+.App.dark-mode .education__card p,
+.App.dark-mode .education__card div,
+.App.dark-mode .education__card span
+.App.dark-mode .education__card li
+ {
+  color: #ffffff !important;
+  
+}
+
+
+.App.dark-mode .education__card li
+ .App.dark-mode.education__card span{
+
+  font-weight: bold;
+  background: #6e8080;
+  color: #020713;
+ }
+
+
+
+
+
+/* Dark mode for education badges and elements */
+
+
+
+/* Dark mode for skills page */
+.App.dark-mode .skills {
+  background: #0f1419 !important;
+  
+}
+
+.App.dark-mode .skills h2,
+.App.dark-mode .skills p {
+  color: #f5f6fa !important;
+}
+
+.App.dark-mode .skills__tabs button {
+  background: #1a1f2e;
+  border: 1px solid #4a5568;
+  color: #b0b3b8;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .skills__tabs button:hover {
+  background: #2d3748;
+  color: #f5f6fa;
+  border-color: #4ea1f7;
+}
+
+.App.dark-mode .skills__tabs button.active {
+  background: #4ea1f7;
+  color: #ffffff;
+  border-color: #4ea1f7;
+}
+
+/* Dark mode for skills categories (Technical tab) */
+.App.dark-mode .skills__categories {
+  background: #0f1419;
+}
+
+.App.dark-mode .skills__category {
+  background: #1a1f2e !important;
+  color: #f5f6fa !important;
+  border: 1px solid #2d3748;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.App.dark-mode .skills__category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  border-color: #4a5568;
+}
+
+.App.dark-mode .skills__category h3 {
+  color: #f5f6fa !important;
+}
+
+.App.dark-mode .skills__bar {
+  color: #f5f6fa !important;
+}
+
+.App.dark-mode .skills__bar .skill-name-with-icon span {
+  color: #f5f6fa !important;
+}
+
+.App.dark-mode .bar {
+  background: #2d3748 !important;
+}
+
+.App.dark-mode .bar__fill {
+  background: #4ea1f7 !important;
+}
+
+.App.dark-mode .level {
+  color: #b0b3b8 !important;
+}
+
+/* Dark mode for soft skills */
+.App.dark-mode .skills__soft {
+  background: #0f1419;
+  margin-left: 0 !important;
+  justify-content: center;
+}
+
+.App.dark-mode .skills__soft-card {
+  background: #ffffff !important;
+  color: #18191a !important;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+  border-radius: 16px;
+  padding: 2.2rem 1.5rem 1.7rem 1.5rem;
+  min-width: 280px;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.App.dark-mode .skills__soft-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.App.dark-mode .skills__soft-card h4 {
+  color: #18191a !important;
+  font-weight: 700;
+  font-size: 1.18rem;
+  margin-bottom: 0.3rem;
+}
+
+.App.dark-mode .skills__soft-card div[style*="color: #444"] {
+  color: #444 !important;
+  font-size: 1.01rem;
+  margin-bottom: 1.1rem;
+}
+
+.App.dark-mode .skills__soft-card div[style*="color: #222"] {
+  color: #222 !important;
+  font-weight: 600;
+  font-size: 0.97rem;
+}
+
+.App.dark-mode .skills__soft-card .bar {
+  background: #e3e9f7 !important;
+}
+
+.App.dark-mode .skills__soft-card .bar__fill {
+  background: var(--skill-color) !important;
+}
+
+/* Dark mode for tools */
+.App.dark-mode .skills__tools {
+  background: #0f1419;
+}
+
+.App.dark-mode .skills__tool-card {
+  background: #1a1f2e !important;
+  color: #f5f6fa !important;
+  border: 1px solid #2d3748;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  border-radius: 16px;
+  padding: 2.2rem 1.5rem 1.7rem 1.5rem;
+  min-width: 280px;
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.App.dark-mode .skills__tool-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  border-color: #4a5568;
+}
+
+.App.dark-mode .skills__tool-card h4 {
+  color: #f5f6fa !important;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin: 0;
+  text-align: left;
+}
+
+.App.dark-mode .skills__tool-card span[style*="background: #f1f3f6"] {
+  background: #2d3748 !important;
+  color: #f5f6fa !important;
+  border: 1px solid #4a5568;
+}
+
+.App.dark-mode .skills__tool-card span[style*="background: #f1f3f6"]:hover {
+  background: #4a5568 !important;
+  transform: translateY(-1px);
+}
+
+/* Dark mode for skill icon circles */
+.App.dark-mode .skill-icon-circle {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Dark mode for soft skills grid layout */
+.App.dark-mode .skills__soft {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 2rem !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  max-width: 1100px !important;
+}
+
+/* Dark mode for tools grid layout */
+.App.dark-mode .skills__tools {
+  display: flex !important;
+  gap: 2rem !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
+
+/* Dark mode for projects page */
+.App.dark-mode .projects h2,
+.App.dark-mode .projects p {
+  color: #f5f6fa !important;
+}
+
+.App.dark-mode .projects__filters button {
+  background: #1a1f2e;
+  border: 1px solid #4a5568;
+  color: #b0b3b8;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .projects__filters button:hover {
+  background: #2d3748;
+  color: #f5f6fa;
+  border-color: #4ea1f7;
+}
+
+.App.dark-mode .projects__filters button.active {
+  background: #4ea1f7;
+  color: #ffffff;
+  border-color: #4ea1f7;
+}
+
+.App.dark-mode .projects__tech span {
+  background: #2d3748 !important;
+  color: #f5f6fa !important;
+  border: 1px solid #4a5568;
+}
+
+.App.dark-mode .projects__links a {
+  color: #4ea1f7 !important;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .projects__links a:hover {
+  color: #6fcf97 !important;
+  transform: translateY(-1px);
+}
+
+/* Dark mode for contact page */
+.App.dark-mode .contact h2,
+.App.dark-mode .contact p {
+  color: #f5f6fa !important;
+}
+
+.App.dark-mode .contact__tabs button {
+  background: #1a1f2e;
+  border: 1px solid #4a5568;
+  color: #b0b3b8;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .contact__tabs button:hover {
+  background: #2d3748;
+  color: #f5f6fa;
+  border-color: #4ea1f7;
+}
+
+.App.dark-mode .contact__tabs button.active {
+  background: #4ea1f7;
+  color: #ffffff;
+  border-color: #4ea1f7;
+}
+
+.App.dark-mode .contact__form {
+  background: #1a1f2e !important;
+  border: 1px solid #2d3748;
+}
+
+.App.dark-mode .contact__form input,
+.App.dark-mode .contact__form textarea {
+  background: #2d3748;
+  border: 1px solid #4a5568;
+  color: #f5f6fa;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .contact__form input:focus,
+.App.dark-mode .contact__form textarea:focus {
+  border-color: #4ea1f7;
+  box-shadow: 0 0 0 2px rgba(78, 161, 247, 0.2);
+  outline: none;
+}
+
+.App.dark-mode .contact__form input::placeholder,
+.App.dark-mode .contact__form textarea::placeholder {
+  color: #b0b3b8;
+}
+
+/* Dark mode buttons */
+.App.dark-mode .btn-primary {
+  background: #4ea1f7;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .btn-primary:hover {
+  background: #6fcf97;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(111, 207, 151, 0.3);
+}
+
+.App.dark-mode .btn-outline {
+  background: #1a1f2e;
+  color: #4ea1f7;
+  border: 1px solid #4ea1f7;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .btn-outline:hover {
+  background: #2d3748;
+  color: #f5f6fa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(78, 161, 247, 0.3);
+}
+
+/* Dark mode for hero section */
+.App.dark-mode .hero__skills span {
+  background: #2d3748 !important;
+  color: #f5f6fa !important;
+  border: 1px solid #4a5568;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .hero__skills span:hover {
+  background: #4a5568 !important;
+  transform: translateY(-1px);
+}
+
+/* Dark mode for navbar */
+.App.dark-mode .navbar {
+  background: #1a1f2e;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  border-bottom: 1px solid #2d3748;
+}
+
+.App.dark-mode .navbar__logo {
+  color: #f5f6fa;
+}
+
+.App.dark-mode .navbar__links li a {
+  color: #b0b3b8;
+  transition: all 0.3s ease;
+}
+
+.App.dark-mode .navbar__links li a:hover {
+  color: #4ea1f7;
+  transform: translateY(-1px);
+}
+
+/* Dark mode for footer */
+.App.dark-mode .footer {
+  background: #0f1419;
+  color: #b0b3b8;
+  border-top: 1px solid #2d3748;
+}
+
+/* Dark mode for profile image */
+.App.dark-mode .profile-img {
+  border: 4px solid #2d3748;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+/* Dark mode for card icon circles */
+.App.dark-mode .card-icon-circle {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Dark mode for skill icon circles */
+.App.dark-mode .skill-icon-circle {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Enhanced transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 2px solid #4ea1f7;
+  outline-offset: 2px;
+}
+
+.App.dark-mode button:focus,
+.App.dark-mode input:focus,
+.App.dark-mode textarea:focus,
+.App.dark-mode a:focus {
+  outline: 2px solid #6fcf97;
+  outline-offset: 2px;
+}

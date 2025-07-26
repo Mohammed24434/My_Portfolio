@@ -1,0 +1,134 @@
+.skills {
+  padding: 4rem 2rem 2rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.skills h2 span {
+  color: #007bff;
+}
+.skills__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 2rem 0;
+}
+.skills__tabs button {
+  background: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.skills__tabs button.active, .skills__tabs button:hover {
+  background: #007bff;
+  color: #fff;
+}
+.skills__categories {
+  display: flex;
+  gap: 2rem;
+  /* display: flex;  */
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills__category {
+  background: #f7f9fb;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  min-width: 260px;
+  max-width: 340px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: left;
+  margin-bottom: 1rem;
+  
+}
+
+.skills__bar {
+  margin: 0.7rem 0;
+}
+.bar {
+  background: #e3e9f7;
+  border-radius: 6px;
+  height: 8px;
+  width: 100%;
+  margin: 0.3rem 0;
+  overflow: hidden;
+}
+.bar__fill {
+  background: #007bff;
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.5s;
+}
+.level {
+  font-size: 0.9rem;
+  color: #555;
+  margin-left: 0.5rem;
+}
+.skills__soft {
+  /* display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+  margin-left: 150px;
+}
+.skills__soft-card {
+  background: #f7f9fb;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  min-width: 220px;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.skills__tools {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills__tool-card {
+  background: #f7f9fb;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  min-width: 220px;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.skills__tool-card ul {
+  list-style: none;
+  padding: 0;
+}
+.skills__tool-card li {
+  margin-bottom: 0.5rem;
+  color: #007bff;
+  font-weight: 500;
+}
+.skill-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.skill-icon-circle img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+} 

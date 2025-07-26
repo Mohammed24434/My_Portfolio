@@ -1,0 +1,121 @@
+.projects {
+  padding: 4rem 2rem 2rem 2rem;
+  background: #f7f9fb;
+  text-align: center;
+}
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.projects h2 span {
+  color: #007bff;
+}
+.projects__filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 2rem 0;
+}
+.projects__filters button {
+  background: #fff;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.projects__filters button.active, .projects__filters button:hover {
+  background: #007bff;
+  color: #fff;
+}
+.projects__cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects__card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  min-width: 260px;
+  max-width: 340px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  text-align: left;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007bff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.projects__card.green { border-left: 4px solid #28a745; }
+.projects__card.orange { border-left: 4px solid #fd7e14; }
+.projects__card.purple { border-left: 4px solid #6f42c1; }
+.projects__card.teal { border-left: 4px solid #20c997; }
+.projects__card.red { border-left: 4px solid #dc3545; }
+.projects__card.blue { border-left: 4px solid #007bff; }
+.projects__tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 0.7rem 0;
+}
+.projects__tech span {
+  background: #e3e9f7;
+  color: #222;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+.projects__links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.projects__links a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.projects__links a:hover {
+  color: #0056b3;
+}
+.card-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.3rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.card-icon-circle img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+}
+.projects__card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.projects__card-title-row h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.projects__card-title-left {
+  justify-content: flex-start;
+  margin-bottom: 0.5rem;
+}
+.projects__card-title-left h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+} 
